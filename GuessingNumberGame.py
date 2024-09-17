@@ -39,5 +39,6 @@ if __name__ == "__main__":
     while True:
         yes = input("Hey wanna play a game!?!? ")
         yes = yes.lower()
-        if yes == "y" or yes == "yes" or yes == "ofc" or yes == "ok" or yes == "of course" or yes == "yeah" or yes == "ya":
+        answersYes = ["yes", "yeah", "y", "ofc", "of course", "yea", "ok", "ya", "hahaha", "NO YOU IDIOT"]
+        if yes in answersYes:
             startGame()
