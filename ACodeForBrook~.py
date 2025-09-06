@@ -17,3 +17,8 @@ for l, letter in enumerate(alphabet):
 alphabet = "".join(scrambledAlphabet)
 
 print(alphabet)
+
+passkey1 = "Galoomba"
+passkey2 = "JumpManMario"
+passkey3 = "Moniz"
+
