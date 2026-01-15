@@ -33,3 +33,17 @@ float("410.23")
 int("13  ")
 13
 print(int("7") * float("2.4"))
+16.8
+
+#def doSchool()
+#for i in range(5):
+#    doSchool()
+
+names = ["Henry", "Jim", "Destiny Testiny"]
+#for name in names: print(name)
+
+numbers = [51, 30, 1, 62.5]
+favoriteNumSpot = None
+for index, number in enumerate(numbers):
+    if number == 62.5:
+        favoriteNumSpot = index
