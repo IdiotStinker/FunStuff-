@@ -13,7 +13,7 @@ groceryList.split("\n")
 ["Pie", "Cheese", "Chocolate", "Anchovies"]
 
 declarationOfIndependance = "We the People, in order to form a more perfect Union".split()
-print(declarationOfIndependance[-2])
+#print(declarationOfIndependance[-2])
 "perfect"
 
 footballScores = """Houston-Texans vs Pittsburgh-Steelers, 7 to 6
@@ -32,7 +32,7 @@ float("410.23")
 410.23
 int("13  ")
 13
-print(int("7") * float("2.4"))
+#print(int("7") * float("2.4"))
 16.8
 
 #def doSchool()
@@ -47,3 +47,14 @@ favoriteNumSpot = None
 for index, number in enumerate(numbers):
     if number == 62.5:
         favoriteNumSpot = index
+
+
+#day2
+yes =numbers.pop()
+
+def removeThird(items):
+    return items.pop(2)
+
+words=["Hello", "Goo'bye", "Strange"]
+print(removeThird(words))
+print(words)
