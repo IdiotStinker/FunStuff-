@@ -56,5 +56,46 @@ def removeThird(items):
     return items.pop(2)
 
 words=["Hello", "Goo'bye", "Strange"]
-print(removeThird(words))
-print(words)
+
+
+#list.insert()
+
+cars = ["honda", "toyota", "KIA", "lamborghini", "BMW" ]
+cars.sort() # Capital first, then A-Z: BMW, KIA, Honda...
+#print(cars)
+cars.sort(key=str.lower) # W/o capitals: BMW, honda...
+#print(cars)
+cars.sort(key=len, reverse=True) # Long to short: lamborghini, toyota...
+#print(cars)
+cars.sort(key=len) # KIA is originally first so it is ahead of BMW
+#print(cars)
+
+def order(layer):
+    return list(layer).count("#")
+
+pyramid = """#######
+   #    
+ #####  
+  ###   """
+
+pyramid = pyramid.split("\n")
+pyramid.sort(key=order)
+#print(pyramid)
+
+#for level in pyramid: print(level)
+import math
+#math.pow()
+#print(0x100)
+
+user_input = input("pick a number")
+
+is_prime = True
+for i in range(2, int(user_input)):
+    if int(user_input) % i == 0 :
+        is_prime = False
+        break #break out of the for loop since the number isn't prime
+
+if is_prime:
+   print("Your number is prime")
+else:
+   print("your number is not prime")

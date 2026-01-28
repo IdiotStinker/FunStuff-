@@ -13,5 +13,6 @@ def load_data_from_azure():
     blob_data = blob_client.download_blob().readall()
     return json.loads(blob_data)
 
+
 data = load_data_from_azure()
 print(data)
