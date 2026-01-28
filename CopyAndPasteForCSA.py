@@ -87,7 +87,7 @@ import math
 #math.pow()
 #print(0x100)
 
-user_input = input("pick a number")
+user_input = 1
 
 is_prime = True
 for i in range(2, int(user_input)):
@@ -95,7 +95,27 @@ for i in range(2, int(user_input)):
         is_prime = False
         break #break out of the for loop since the number isn't prime
 
-if is_prime:
-   print("Your number is prime")
-else:
-   print("your number is not prime")
+#if is_prime:
+#   print("Your number is prime")
+#else:
+#   print("your number is not prime")
+
+INPUT = "2"
+coords = [list(map(int, coord.split(","))) for coord in INPUT]
+
+planetaryModel = []
+for r in range(10):
+    row = ""
+    for c in range(10):
+        if [r, c] in coords: 
+            row+="#"
+        else: row+="."
+    planetaryModel.append(row)
+print("\n".join(planetaryModel))
+
+rows="hi"
+H = len(rows)
+W = len(rows[0])
+
+#"".join(array)
+#" 👏 ".join(array)
