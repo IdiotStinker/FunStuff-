@@ -103,6 +103,7 @@ for i in range(2, int(user_input)):
 INPUT = "2"
 coords = [list(map(int, coord.split(","))) for coord in INPUT]
 
+"""
 planetaryModel = []
 for r in range(10):
     row = ""
@@ -112,6 +113,7 @@ for r in range(10):
         else: row+="."
     planetaryModel.append(row)
 print("\n".join(planetaryModel))
+"""
 
 rows="hi"
 H = len(rows)
@@ -119,3 +121,49 @@ W = len(rows[0])
 
 #"".join(array)
 #" 👏 ".join(array)
+
+dictionary = {"stupidness": "yes", "highfive": True, "key": "gone"}
+
+
+for item in dictionary:
+    dictionary["key"]
+"""
+pieces = {"pawn": 1, "knight": 3, "bishop": 3, "rook": 5, "queen": 8}
+for r, row in enumerate(INPUT.split("\n")):
+    count = 0
+    if r == 1: player1 = count
+    for piece in row.split(", "):
+        count += pieces[piece]
+"""
+items={}
+#print(player1-count)
+"""
+for item in enumerate(INPUT.split(";")):
+    items[item.split(": $")[0]] = int(item.split(": $")[1])
+"""
+items = {"hi": "3"}
+
+price = 0
+"""
+for orders in INPUT.split("\n")[1].split(";"):
+    prices = items[orders.split("*")[0]] * int(orders.split("*")[0])
+"""
+items.get("chips")
+items.keys()
+("chips", 2)
+goods = {"hi": 5,"4i": 2,"5i": 56}
+goods = dict(sorted(goods.items(), key=lambda good: good[1]))
+"""
+order = "hi"
+orders = []
+""""""
+for order, mult in orders:
+    if order in items.keys():
+        # Do price addition!
+
+for order, mult in orders:
+    for key in items.keys(): 
+        if order == key: 
+            # Do price addition!
+"""
+if goods.get("4i"): print("hi")
